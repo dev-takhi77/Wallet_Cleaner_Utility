@@ -1,0 +1,19 @@
+{
+  "name": "wallet-cleaner",
+  "author": "Sol_takhi",
+  "version": "1.0.0",
+  "description": "This is burning all tokens in your test wallet and close all atas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7"
+  }
+}
